@@ -1,0 +1,82 @@
+{
+  "name": "@dc_/eslint-config-next",
+  "version": "1.0.0",
+  "description": "Comprehensive ESLint config for NextJS projects",
+  "keywords": [
+    "eslint",
+    "typescript",
+    "linter",
+    "code-quality",
+    "react"
+  ],
+  "homepage": "https://github.com/dcrgll/eslint-config-next#readme",
+  "bugs": {
+    "url": "https://github.com/dcrgll/eslint-config-next/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcrgll/eslint-config-next.git"
+  },
+  "license": "MIT",
+  "author": "Dan Cargill",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint --fix 'index.ts'",
+    "release": "release-it",
+    "dep-updates": "npx npm-check-updates --root --format group -i"
+  },
+  "prettier": "@dc_/prettier-config",
+  "dependencies": {
+    "@eslint/compat": "^1.2.5",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "@next/eslint-plugin-next": "^15.1.5",
+    "@types/eslint__js": "^8.42.3",
+    "eslint-plugin-jsdoc": "^50.6.2",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-markdown": "^5.1.0",
+    "eslint-plugin-n": "17.15.1",
+    "eslint-plugin-perfectionist": "^4.6.0",
+    "eslint-plugin-promise": "7.2.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-perf": "^3.3.3",
+    "eslint-plugin-unicorn": "56.0.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "eslint-plugin-vitest": "^0.5.4",
+    "globals": "^15.14.0"
+  },
+  "devDependencies": {
+    "@dc_/prettier-config": "^1.0.3",
+    "@types/eslint__eslintrc": "^2.1.2",
+    "eslint": "^9.18.0",
+    "prettier": "^3.5.1",
+    "release-it": "^18.1.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9",
+    "next": ">=14",
+    "react": ">=18",
+    "typescript": ">=5",
+    "typescript-eslint": ">=8"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "readme": "README.md",
+  "release-it": {
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "github": {
+      "release": true
+    }
+  }
+}
