@@ -104,6 +104,7 @@ export default [
       'no-unused-vars': 'off',
       'object-shorthand': 'error',
       'perfectionist/sort-imports': 'off',
+      'perfectionist/sort-named-imports': 'off',
       'prefer-const': ['error', { destructuring: 'all' }],
       'prefer-destructuring': 'error',
       'prefer-template': 'warn',
